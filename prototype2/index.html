@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prototype example</title>
+</head>
+<body>
+    <script src="Mammals.js"></script>
+	<script src="Human.js"></script>
+    <script src="Ninja.js"></script>
+    <script>
+        var chan = new Ninja({
+            hair: 'brown',
+            extreminits:{
+                arms: 2,
+                legs: 2
+            }
+        }, 'male', 'chan', 'karate');
+
+        var lee = new Ninja({
+            hair: 'black',
+            extreminits:{
+                arms: 2,
+                legs: 2
+            }
+        }, 'male', 'lee', 'judo');
+
+        console.log(chan.name);
+        console.log(lee.name);
+
+        console.log(lee.talk());
+        console.log(chan.talk());
+        console.log(lee.talk());
+
+        console.log(lee.eat());
+        console.log(chan.eat());
+
+        console.log(lee.type);
+        console.log(chan.type);
+
+    </script>
+</body>
+</html>
